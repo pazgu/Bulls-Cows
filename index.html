@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls and Cows</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <h1>Bulls and Cows</h1>
+    <p>
+        Discover the hidden digits! Click or use arrow keys, to change your guess
+        in each box. (Bulls = correct digit, correct position. Cows = correct
+        digit, wrong position).
+    </p>
+    <div class="number_to_guess">
+        <input type="button" value="?" />
+        <input type="button" value="?" />
+        <input type="button" value="?" />
+        <input type="button" value="?" />
+        <span class="bulls">Bulls</span>
+        <span class="cows">Cows</span>
+    </div>
+    <div class="board">
+        <input id="guess1" type="button" value="0" onclick="setCurrentInputField(this)"/>
+        <input id="guess2" type="button" value="1" onclick="setCurrentInputField(this)" />
+        <input id="guess3" type="button" value="2" onclick="setCurrentInputField(this)" />
+        <input id="guess4" type="button" value="3" onclick="setCurrentInputField(this)" />
+        <button class="guesses" type="button" onclick="user_guessings_go()">Go</button>
+        <div id="duplicates"></div>
+    </div>
+    <div id="guessings_history"></div>
+    <div id="show_target"></div>
+    <div class="numbers">
+        <input type="button" value="0" onclick="handleNumberButtonClick(0)" />
+        <input type="button" value="1" onclick="handleNumberButtonClick(1)" />
+        <input type="button" value="2" onclick="handleNumberButtonClick(2)" />
+        <input type="button" value="3" onclick="handleNumberButtonClick(3)" />
+        <input type="button" value="4" onclick="handleNumberButtonClick(4)" />
+        <input type="button" value="5" onclick="handleNumberButtonClick(5)" />
+        <input type="button" value="6" onclick="handleNumberButtonClick(6)" />
+        <input type="button" value="7" onclick="handleNumberButtonClick(7)" />
+        <input type="button" value="8" onclick="handleNumberButtonClick(8)" />
+        <input type="button" value="9" onclick="handleNumberButtonClick(9)" />
+    </div>
+    <div class="operations">
+        <button type="button" onclick="start_new_game()" >New Game</button>
+        <button type="button" onclick="give_up()" >Give Up</button>
+    </div>
+    <script src="bulls_cows.js"></script>
+</body>
+</html>

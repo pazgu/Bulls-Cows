@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2664B5;
+    background-color: #E1E3FF;
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.number_to_guess {
+    margin-bottom: 20px;
+}
+
+.number_to_guess input[type="button"]{
+    background-color: #E0E3FF;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.bulls, .cows {
+    
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: white;
+}
+
+.bulls {
+    color: green;
+}
+
+.cows {
+    color: blue;
+}
+
+#guessings_history {
+    margin-top: 20px;
+}
+
+#guessings_history div {
+    margin-bottom: 10px;
+}
+
+.board{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 5px;
+    position: sticky;
+    top: 25px; 
+}
+
+.board input[type="button"]{
+    background-color: #FFFFA3;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+
+.new-guessing-input {
+    background-color: #FFFFA3;
+    width: 22px;
+    height: 24px;
+    font-size: 1.2em;
+    margin: 0 12px;
+}
+
+.target-digit {
+    background-color: #E1E3FF;
+    width: 22px;
+    height: 24px;
+    font-size: 1.2em;
+    margin: 6px 12px;
+    margin-bottom: 20px;
+}
+
+.numbers input[type="button"]{
+    background-color: #85A0AD;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+    margin: 0 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #B1D3FF;
+}
